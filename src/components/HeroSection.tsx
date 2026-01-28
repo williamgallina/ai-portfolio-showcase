@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Mail, Linkedin, MapPin, Phone } from "lucide-react";
+import { Mail, Linkedin, MapPin, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const titles = [
@@ -113,6 +113,19 @@ export function HeroSection() {
             </Button>
             <Button 
               variant="outline" 
+              size="lg"
+              asChild
+            >
+              <a 
+                href="/William_Gallina_Resume.pdf"
+                download="William_Gallina_Resume.pdf"
+              >
+                <Download className="w-4 h-4 mr-2" />
+                Download Resume
+              </a>
+            </Button>
+            <Button 
+              variant="ghost" 
               size="lg"
               asChild
             >
